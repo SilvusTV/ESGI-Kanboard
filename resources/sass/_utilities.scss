@@ -1,0 +1,22 @@
+@import 'variables';
+
+// 🎨 Backgrounds
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: #{$color} !important;
+  }
+}
+
+// 🖋 Text colors
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: #{$color} !important;
+  }
+}
+
+// ⬛ Border colors
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border-color: #{$color} !important;
+  }
+}

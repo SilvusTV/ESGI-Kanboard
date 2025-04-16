@@ -1,0 +1,30 @@
+// 🎨 Couleurs
+$colors: (
+    C1: #D7E0E9,
+    C2: #A4B0BC,
+    C3: #C7B09A,
+    C4: #75604F,
+    clear: #FFFFFF,
+    dark: #000000
+);
+
+// 📱 Breakpoints
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// 📏 Spacing
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
+
+// 🧱 Nombre de colonnes
+$grid-columns: 12;

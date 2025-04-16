@@ -4,6 +4,7 @@ use App\Events\ChatMessageSent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\IndexController;
 
 Route::post('/send-message', function (Request $request) {
     $request->validate([
@@ -21,6 +22,6 @@ Route::post('/send-message', function (Request $request) {
     return response()->json(['success' => true]);
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'indexView'])->name('index.view');
+Route::get('/about-us', [IndexController::class, 'aboutUsView'])->name('aboutus.view');
+Route::get('/prices', [IndexController::class, 'pricesView'])->name('prices.view');

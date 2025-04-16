@@ -1,0 +1,32 @@
+@import 'variables';
+
+.landingfooter {
+  background-color: map-get($colors, C1);
+  padding: 2rem 1rem;
+
+  &__logo a {
+    font-size: 1.5rem;
+    font-family: serif;
+    color: map-get($colors, dark);
+    text-decoration: none;
+  }
+
+  &__creators {
+    font-size: 1rem;
+    color: map-get($colors, C4);
+    font-family: serif;
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    font-size: 0.95rem;
+    font-family: serif;
+    color: map-get($colors, dark);
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover {
+      color: map-get($colors, C3);
+    }
+  }
+}

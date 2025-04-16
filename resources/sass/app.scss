@@ -1,8 +1,18 @@
-// Exemple de styles
-$primary-color: #072a35;
+@import 'variables';
+@import 'reset';
+@import 'tools';
+@import 'grid';
+@import 'utilities';
 
-body {
-    background-color: $primary-color;
-    font-family: Arial, sans-serif;
-    color: white;
-}
+@import 'button';
+@import 'link';
+
+@import 'indexbanner';
+@import 'indexvalidation';
+@import 'indexcontent';
+@import 'indexcontent3';
+@import 'indextry';
+
+@import 'landingheader';
+@import 'landingfooter';
+

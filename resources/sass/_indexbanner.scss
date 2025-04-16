@@ -1,0 +1,41 @@
+@import 'variables';
+
+.indexbanner {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-family: serif;
+    color: map-get($colors, dark);
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    color: map-get($colors, dark);
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: start;
+  }
+
+  &__image {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}

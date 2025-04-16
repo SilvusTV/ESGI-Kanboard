@@ -1,0 +1,58 @@
+@import 'variables';
+
+// Spacing
+@each $key, $space in $spacers {
+  .m-#{$key}  { margin: $space !important; }
+  .mt-#{$key} { margin-top: $space !important; }
+  .mb-#{$key} { margin-bottom: $space !important; }
+  .ms-#{$key} { margin-left: $space !important; }
+  .me-#{$key} { margin-right: $space !important; }
+
+  .p-#{$key}  { padding: $space !important; }
+  .pt-#{$key} { padding-top: $space !important; }
+  .pb-#{$key} { padding-bottom: $space !important; }
+  .ps-#{$key} { padding-left: $space !important; }
+  .pe-#{$key} { padding-right: $space !important; }
+}
+
+// Justify content
+.justify-start    { justify-content: flex-start !important; }
+.justify-center   { justify-content: center !important; }
+.justify-end      { justify-content: flex-end !important; }
+.justify-between  { justify-content: space-between !important; }
+.justify-around   { justify-content: space-around !important; }
+.justify-evenly   { justify-content: space-evenly !important; }
+
+// Align items
+.align-start    { align-items: flex-start !important; }
+.align-center   { align-items: center !important; }
+.align-end      { align-items: flex-end !important; }
+.align-stretch  { align-items: stretch !important; }
+.align-baseline { align-items: baseline !important; }
+
+// Display
+.d-block      { display: block !important; }
+.d-inline     { display: inline !important; }
+.d-inline-block { display: inline-block !important; }
+.d-flex       { display: flex !important; }
+.d-inline-flex { display: inline-flex !important; }
+.d-none       { display: none !important; }
+
+// Flex direction
+.flex-row     { flex-direction: row !important; }
+.flex-column  { flex-direction: column !important; }
+.flex-wrap    { flex-wrap: wrap !important; }
+.flex-nowrap  { flex-wrap: nowrap !important; }
+
+// Gap (optionnel)
+.gap-1 { gap: 0.25rem !important; }
+.gap-2 { gap: 0.5rem !important; }
+.gap-3 { gap: 1rem !important; }
+.gap-4 { gap: 1.5rem !important; }
+.gap-5 { gap: 3rem !important; }
+
+// Order
+.order-0  { order: 0 !important; }
+.order-1  { order: 1 !important; }
+.order-2  { order: 2 !important; }
+.order-3  { order: 3 !important; }
