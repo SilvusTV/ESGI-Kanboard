@@ -1,0 +1,26 @@
+@import '../base/variables';
+
+.indexabout {
+  &__image {
+    width: 100%;
+    border-radius: 1rem;
+    border: 3px solid #2C70FF;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-family: serif;
+    font-size: 1.75rem;
+    color: map-get($colors, dark);
+  }
+
+  &__text {
+    font-family: serif;
+    color: map-get($colors, C4);
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  }
+}

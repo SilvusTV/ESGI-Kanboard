@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../base/variables';
 
 // 🎨 Backgrounds
 @each $name, $color in $colors {

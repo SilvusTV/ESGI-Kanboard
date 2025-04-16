@@ -34,9 +34,4 @@
 
     {{-- À propos --}}
     @include('components.aboutContent')
-
-    {{-- Tarifs --}}
-    @include('components.priceFree')
-    @include('components.pricePro')
-    @include('components.priceEnterprise')
 @endsection

@@ -2,16 +2,15 @@
     <div class="container mt-5">
         <div class="row align-center">
             {{-- Image gauche alignée à gauche --}}
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-right">
                 <div class="d-flex justify-start">
                     <img src="{{ asset('images/mockup.png') }}" alt="Aperçu application" class="indexcontent__image">
                 </div>
             </div>
 
             {{-- Texte droite aligné à droite --}}
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-left">
                 <div class="d-flex align-start ms-5 flex-column">
-
                     <h2 class="indexcontent__title">
                         Créez et gérez vos projets<br>en toute simplicité
                     </h2>

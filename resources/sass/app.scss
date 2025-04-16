@@ -1,18 +1,21 @@
-@import 'variables';
-@import 'reset';
-@import 'tools';
-@import 'grid';
-@import 'utilities';
+// 🔧 Base
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/tools';
+@import 'base/grid';
+@import 'base/utilities';
 
-@import 'button';
-@import 'link';
+// 🎨 Composants
+@import 'components/button';
+@import 'components/link';
 
-@import 'indexbanner';
-@import 'indexvalidation';
-@import 'indexcontent';
-@import 'indexcontent3';
-@import 'indextry';
-
-@import 'landingheader';
-@import 'landingfooter';
-
+@import 'components/indexbanner';
+@import 'components/indexvalidation';
+@import 'components/indexcontent';
+@import 'components/indexcontent3';
+@import 'components/indextry';
+@import 'components/indexprices';
+@import 'components/indexabout';
+@import 'components/landingheader';
+@import 'components/landingfooter';
+@import 'components/pricecard';

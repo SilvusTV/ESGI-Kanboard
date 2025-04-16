@@ -1,0 +1,10 @@
+@import '../base/variables';
+
+.indexprices {
+  &__title {
+    font-size: 1.75rem;
+    font-family: serif;
+    color: map-get($colors, dark);
+    text-align: center;
+  }
+}

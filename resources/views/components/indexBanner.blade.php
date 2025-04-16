@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-center justify-center">
             {{-- Col gauche --}}
-            <div class="col-6 text-center text-md-start">
+            <div class="col-6 text-center text-md-start" data-aos="fade-right">
                 <h1 class="indexbanner__title">
                     Organisez, collaborez,<br>réussissez !
                 </h1>
@@ -16,7 +16,7 @@
             </div>
 
             {{-- Col droite --}}
-            <div class="col-6 text-center">
+            <div class="col-6 text-center" data-aos="fade-left">
                 <img src="{{ asset('images/mockup.png') }}" alt="Mockup application" class="indexbanner__image">
             </div>
         </div>

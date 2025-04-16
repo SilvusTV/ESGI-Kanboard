@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="row align-center">
             {{-- Texte gauche aligné à gauche --}}
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-right">
                 <div class="d-flex flex-column align-start">
                     <h2 class="indexcontent__title">
                         Collaborez facilement avec<br>votre équipe
@@ -17,7 +17,7 @@
             </div>
 
             {{-- Image droite alignée à droite --}}
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-left">
                 <div class="d-flex justify-end">
                     <img src="{{ asset('images/mockup.png') }}" alt="Collaboration en équipe" class="indexcontent__image">
                 </div>

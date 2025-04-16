@@ -28,19 +28,26 @@
     {{-- Fonts & Icons --}}
     <link rel="stylesheet" href="{{ asset('fonts/fontAwesome/css/all.css') }}">
 
+    {{-- AOS --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
     {{-- CSS principal --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 
-    {{-- Header --}}
-    @include('partials.landingPageHeader')
+    <div id="app" class="d-flex flex-column flex-grow-1">
+        {{-- Header --}}
+        @include('partials.landingPageHeader')
 
-    {{-- Contenu principal --}}
-    @yield('content')
+        {{-- Contenu principal --}}
+        <main class="flex-grow-1">
+            @yield('content')
+        </main>
 
-    {{-- Footer --}}
-    @include('partials.landingPageFooter')
+        {{-- Footer --}}
+        @include('partials.landingPageFooter')
+    </div>
 
     {{-- Scripts Laravel Echo via Reverb --}}
     <script>
@@ -50,6 +57,15 @@
             reverbPort: {{ env('REVERB_PORT') }},
             reverbScheme: "{{ env('REVERB_SCHEME') }}"
         };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-in-out'
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.3/pusher.min.js"></script>
