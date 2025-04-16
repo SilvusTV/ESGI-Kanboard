@@ -31,7 +31,4 @@
 
     {{-- Essai / CTA --}}
     @include('components.indexTry')
-
-    {{-- À propos --}}
-    @include('components.aboutContent')
 @endsection
