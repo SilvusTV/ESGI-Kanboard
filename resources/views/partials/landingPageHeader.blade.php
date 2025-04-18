@@ -14,7 +14,7 @@
 
         {{-- Bouton --}}
         <div class="header__btn">
-            <a href="{{-- route('login') --}}" class="indexbutton">Se connecter</a>
+            <a href="{{ route('login.view') }}" class="indexbutton">Se connecter</a>
         </div>
     </div>
 </header>

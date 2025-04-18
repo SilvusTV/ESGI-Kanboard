@@ -25,3 +25,11 @@ Route::post('/send-message', function (Request $request) {
 Route::get('/', [IndexController::class, 'indexView'])->name('index.view');
 Route::get('/about-us', [IndexController::class, 'aboutUsView'])->name('aboutus.view');
 Route::get('/prices', [IndexController::class, 'pricesView'])->name('prices.view');
+
+Route::get('/login', [\App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login.view');
+Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login'])->name('login.post');
+Route::get('/register', [\App\Http\Controllers\AuthController::class, 'showRegisterForm'])->name('register.view');
+Route::post('/register', [\App\Http\Controllers\AuthController::class, 'register'])->name('register.post');
+Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
+
+

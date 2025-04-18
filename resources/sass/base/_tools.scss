@@ -58,3 +58,10 @@
 .order-3  { order: 3 !important; }
 
 .flex-grow-1 { flex-grow: 1 !important; }
+
+// Widths (percentage-based)
+@for $i from 1 through 100 {
+    .w-#{$i} {
+      width: #{ $i * 1% } !important;
+    }
+  }
