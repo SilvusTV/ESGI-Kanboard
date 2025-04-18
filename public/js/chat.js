@@ -19,6 +19,7 @@ function initChat() {
     const usernameInput = document.getElementById("username");
     const messageInput = document.getElementById("message");
     const sendButton = document.getElementById("send-btn");
+    console.log("🔍 Récupération des éléments HTML pour le chat...", chatBox, usernameInput, messageInput, sendButton);
 
     // Vérifier si les éléments existent
     if (!chatBox || !usernameInput || !messageInput || !sendButton) {
