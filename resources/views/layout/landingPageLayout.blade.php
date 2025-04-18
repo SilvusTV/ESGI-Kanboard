@@ -73,7 +73,6 @@
 
     {{-- Initialisation WebSocket --}}
     <script src="{{ asset('js/reverbStatus.js') }}"></script>
-    <script src="{{ asset('js/chat.js') }}"></script>
 
     @stack('js')
 </body>
